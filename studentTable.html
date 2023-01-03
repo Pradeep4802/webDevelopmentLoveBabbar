@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Tables</title>
+  </head>
+  <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 300px;
+        bottom: 300px;
+    }
+  </style>
+  <body>
+    <table border cellspacing="14" cellpadding="18">
+      <tr>
+        <th rowspan="2">Heading</th>
+        <th colspan="2">Students</th>
+        <th colspan="4">Details</th>
+      </tr>
+      <tr>
+        <th colspan="2">Id</th>
+        <th colspan="2">Name</th>
+        <th>Department</th>
+        <th>Roll Number</th>
+      </tr>
+      <tr>
+        <td rowspan="4">Student List</td>
+        <td colspan="2">1</td>
+        <td colspan="2">Victor</td>
+        <td>Computer Science</td>
+        <td>12345</td>
+      </tr>
+      <tr>
+        <!-- <td rowspan="4">Student List</td> -->
+        <td colspan="2">2</td>
+        <td colspan="2">Williams</td>
+        <td>Electronics</td>
+        <td>23456</td>
+      </tr>
+      <tr>
+        <!-- <td rowspan="4">Student List</td> -->
+        <td colspan="2">3</td>
+        <td colspan="2">Harry</td>
+        <td>Electrical</td>
+        <td>34567</td>
+      </tr>
+      <tr>
+        <!-- <td rowspan="4">Student List</td> -->
+        <td colspan="2">4</td>
+        <td colspan="2">Rick</td>
+        <td>Civil</td>
+        <td>45678</td>
+      </tr>
+    </table>
+  </body>
+</html>
