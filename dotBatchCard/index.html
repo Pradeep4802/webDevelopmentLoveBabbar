@@ -13,16 +13,26 @@
       body {
         background-color: violet;
       }
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       .container {
-        /* display: inline; */
+        /* display: flex; */
         border: 2px solid black;
         margin: 50px;
-        height: 600px;
+        height: 750px;
         width: 600px;
         background-color: rgba(2, 1, 1, 0.733);
         border: 2px solid white;
         border-radius: 20px;
-        box-shadow: 6px 10px 5px 0px rgba(245,237,245,1)
+        box-shadow: 6px 10px 5px 0px rgba(245,237,245,1);
+        cursor: pointer;
+      }
+
+      .container:hover {
+        box-shadow: 10px 20px 10px 10px rgb(187, 231, 130)
       }
 
       /* .container .image {
@@ -53,12 +63,12 @@
         color: yellow;
       }
 
-      .container p {
+      .container .offer {
         display: inline;
         margin: 15px;
         font-size: 18px;
         color: white;
-        border: 2px solid white;
+        border: 2px solid rgb(255, 255, 255);
         border-radius: 10px;
         background-color: yellowgreen;
         padding: 10px;
@@ -66,25 +76,54 @@
 
       .container .btn {
         display: block;
-        width: 80%;
-        margin-left: 55px;
+        width: 90%;
+        margin-left: 25px;
         margin-top: 20px;
         padding: 10px;
         border-radius: 10px;
         font-size: large;
         background-color: rgba(85, 53, 53, 0.733);
         color: white;
+        cursor: pointer;
+      }
+
+      .container .course {
+        font-size: 30px;
+        margin-left: 34px;
+        margin-top: 20px;
+        color: white;
+        font-weight: bolder;
+      }
+
+      .container ul {
+        margin-left: 60px;
+        margin-top: 15px;
+      }
+
+      .container ul .list {
+        line-height: 43px;
+        color: white;
+        font-size: 22px;
       }
 
     </style>
   </head>
   <body>
-    <div class="container">
-      <img src="dotBatch.jpg" alt="" />
-      <span><b>&#8377;4500 <del>&#8377;6999</b></del></span>
-      <p>42% off</p>
-      <button class="btn">Enrollment Closed</button>
-      
+    <div class="main">
+      <div class="container">
+        <img src="dotBatch.jpg" alt="" />
+        <span><b>&#8377;4500 <del>&#8377;6999</b></del></span>
+        <p class="offer">42% off</p>
+        <button class="btn">Enrollment Closed</button>
+        <p class="course">This Course Includes:</p>
+        <ul>
+          <li class="list">No Prerequisite Required</li>
+          <li class="list">150 Hours On Demand Video</li>
+          <li class="list">MERN Stack Beginner to Advanced</li>
+          <li class="list">Industry Grade Projects</li>
+          <li class="list">with Doubt Assistance</li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
