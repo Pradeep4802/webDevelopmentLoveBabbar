@@ -1,0 +1,12 @@
+.box {
+    border: 1px solid black;
+    position: fixed;
+    left: 50px;
+    /* right: 20px; */
+    top: 20px;
+}
+
+/* .wrapper {
+    border: 1px solid black;
+    margin: 10px;
+} */

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise to fixed image</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        position: relative;
+      }
+      .box .topLeft {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 16px;
+      }
+      .box .topRight {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 16px;
+      }
+      .box .centered {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        font-size: 16px;
+      }
+      .box .bottomLeft {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+      }
+      .box .bottomRight {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+      .box img {
+        width: 100vw;
+        height: 100vh;
+        opacity: 0.3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="island.jpg" alt="Islands" />
+      <div class="topLeft">Top Left</div>
+      <div class="topRight">Top Right</div>
+      <div class="centered">Centered</div>
+      <div class="bottomLeft">Bottom Left</div>
+      <div class="bottomRight">Bottom Right</div>
+    </div>
+  </body>
+</html>
