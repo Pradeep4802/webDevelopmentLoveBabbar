@@ -1,8 +1,8 @@
 .box {
   background-color: aqua;
-  /* transform: translate(100px, 50px); */
-  /* transform: rotate(-45deg); */
-  /* margin: 200px; */
+  transform: translate(100px, 50px);
+  transform: rotate(-45deg);
+  margin: 200px;
   /* transform: scale(15,1); */
   /* transform: scaleX(4); */
   /* transform: scaleY(10); */
@@ -10,12 +10,13 @@
   /* transform: skew(45deg); */
   /* transform: translateX(100px); */
   /* transform: translateY(100px); */
-  /* transform: perspective(100px) translateZ(-100px); */
+  transform: perspective(100px) translateZ(-50px);
   /* transform: translate3d(100px,100px, 10px); */
 
-  transform: perspective(10px) scaleZ(2);
+  /* transform: perspective(10px) scaleZ(2); */
   /* transform-style: preserve-3d; */
   /* transform: rotateZ(45deg); */
+  /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
 }
 
 /* .wrapper {
