@@ -1,82 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Sofia+Sans+Condensed:ital,wght@1,200&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* margin: 0; */
+  /* padding: 0; */
+  /* box-sizing: border-box; */
 }
 
 .container {
   border: 2px solid black;
   display: flex;
-  width: 42%;
-  /* height: 39%; */
-  /* justify-content: flex-start;
-  align-items: flex-start; */
-  position: relative;
-  top: 200px;
-  left: 30%;
-  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: antiquewhite;
 }
 
 .container .main {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding-right: 10px;
 }
 
-.container img {
-  /* display: flex; */
-  width: 50%;
+.container .img {
+  width: 300px;
   height: 350px;
-  /* border: 2px solid red; */
-  border-radius: 13px 0 0 13px;
+  /* box-sizing: border-box; */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
-.container .mug {
-  display: block;
-  letter-spacing: 4px;
-  font-family: "Kanit", sans-serif;
-  /* font-family: "Sofia Sans Condensed", sans-serif; */
-  color: rgb(126, 115, 115);
-  margin: 14px 22px;
-}
 
-.container .main .header1 {
+/* .container .main  {
   margin-left: 22px;
-}
+} */
 
-.container .main .header1 p {
+/* .container .main .header1 p {
   margin-top: 10px;
   line-height: 22px;
   color: rgb(126, 115, 115);
   font-family: "Kanit", sans-serif;
   font-size: 22px;
-}
+} */
 
-.container .main .header1 #discount {
+/* .container .main .header1 #discount {
   font-size: 2em;
   font-weight: bold;
   color: rgba(2, 176, 2, 0.783);
   position: relative;
   top: 20px;
-}
+} */
 
-.container .main .header1 #OG {
+/* .container .main .header1 #OG {
   position: relative;
   top: 20px;
   left: 10px;
   text-decoration: line-through;
-}
+} */
 
-.container .main .btn {
+/* .container .main .btn {
   position: relative;
   left: 70px;
   top: 25px;
-}
+} */
 
-.container .main .btn button {
+/* .container .main .btn button {
   color: white;
   background-color: rgba(2, 176, 2, 0.783);
   border-radius: 10px;
   font-size: 20px;
   padding: 5px 75px
-}
+} */
