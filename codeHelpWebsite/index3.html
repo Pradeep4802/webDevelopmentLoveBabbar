@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Help Team</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Raleway", sans-serif;
+      }
+      h1 {
+        font-family: "Michroma", sans-serif;
+        line-height: 60px;
+      }
+      p {
+        line-height: 34px;
+        color: #777c85 !important;
+      }
+      a {
+        text-decoration: none;
+        color: #777c85 !important;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 120px;
+        position: sticky;
+        top: 0;
+        background-color: white;
+      }
+      nav .logo {
+        width: 98px !important;
+        height: 82px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav .logo figure img {
+        object-fit: contain;
+        height: inherit;
+      }
+      nav ul li {
+        display: inline;
+        padding: 0px 20px;
+      }
+      nav ul li a {
+        font-weight: 600;
+        color: black;
+      }
+      nav ul li a:hover {
+        padding-bottom: 10px;
+        color: #4e5dc0 !important;
+        border-bottom: 1px solid #4e5dc0;
+      }
+      #team {
+        color: #4e5dc0 !important;
+      }
+
+      nav button {
+        border: none;
+        padding: 10px 20px;
+        background-color: #4e5dc0;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+      }
+      main .team-codehelp,
+      .founder {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10vh auto;
+        padding: 0px 20vh;
+      }
+      .section-1-content {
+        padding-right: 100px;
+      }
+      .section-2-content {
+        padding-left: 200px;
+      }
+      .section-1-content p {
+        padding-right: 100px;
+        padding-top: 20px;
+      }
+      .section-2-content p {
+        padding-top: 20px;
+        padding-right: 150px;
+      }
+      footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10vh;
+      }
+      footer .footer-col {
+        width: 25%;
+        padding: 0px 10vh;
+      }
+      footer ul li,
+      footer ul li a {
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        padding-bottom: 10px;
+      }
+      .social-icons li,
+      .social-icons li a {
+        padding-bottom: 0px !important;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .social-icons li {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 50px;
+        height: 50px;
+
+        background-color: #4e5dc0;
+        border-radius: 50%;
+        margin: 5px;
+      }
+      footer h4,
+      footer #privacy-policy {
+        color: #4e5dc0 !important;
+      }
+      footer #privacy-policy {
+        text-decoration: underline !important;
+      }
+      footer .menu li a:hover {
+        color: #4e5dc0 !important;
+      }
+      hr {
+        color: grey;
+        border: none;
+        border-bottom: 2px solid grey;
+      }
+
+      /* FOR RESPONSIVE CODE */
+      @media screen and (max-width: 1300px) {
+        main .team-codehelp,
+        .founder {
+          flex-direction: column;
+          padding: 0px 5vh;
+          margin: 5vh auto;
+        }
+        .founder {
+          flex-direction: column-reverse !important;
+        }
+        .section-1-content p,
+        .section-1-content,
+        .section-2-content p {
+          padding-right: 0px;
+        }
+        .section-2-content {
+          padding-left: 0px;
+        }
+        .team-codehelp figure,
+        .founder figure {
+          padding-top: 50px;
+          width: 100%;
+        }
+        footer .footer-col {
+          width: 50%;
+        }
+        footer {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 10vh 5vh;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        nav {
+          justify-content: space-between;
+          padding: 0 2rem;
+          height: 70px;
+        }
+        .team-codehelp figure img,
+        .founder figure img {
+          width: 100%;
+        }
+        footer .footer-col {
+          width: 100%;
+          padding: 0px 5vh;
+        }
+        footer {
+          min-height: 150vh;
+          padding: 0px;
+        }
+        nav ul {
+          display: none;
+        }
+        nav .logo,
+        nav .logo figure img {
+          width: 50px !important;
+          height: 50px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <figure>
+          <img src="logo.png" alt="logo" />
+        </figure>
+      </div>
+      <ul>
+        <li><a href="#" id="team">Team</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="btn"></div>
+      <button>Start a Project</button>
+    </nav>
+
+    <main>
+      <section class="team-codehelp">
+        <div class="section-1-content">
+          <h1>Team CodeHelp</h1>
+          <hr width="40%" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            repellendus perspiciatis officia in officiis. Voluptates assumenda
+            commodi deserunt, asperiores vitae quos fugit earum distinctio
+            laborum rem saepe facere voluptatibus numquam.. <br /><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Cumque repellendus pyior.
+          </p>
+        </div>
+        <figure>
+          <img
+            src="image1.jpeg"
+            alt="Love Babbar"
+          />
+        </figure>
+      </section>
+
+      <section class="founder">
+        <figure>
+          <img
+            src="image2.jpeg"
+            alt="Love Babbar"
+          />
+        </figure>
+        <div class="section-2-content">
+          <h1>Founder, CEO</h1>
+          <hr width="45%" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            repellendus perspiciatis officia in officiis. Voluptates assumenda
+            commodi deserunt, asperiores
+
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            repellendus perspiciatis officia in officiis. Voluptates assumenda
+            commodi deserunt, asperiores.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-col">
+        <figure>
+          <img src="images/Logo.png" alt="" /> <br />
+          <br />
+          <a href="#" id="privacy-policy">OUR Privacy Policy</a> <br />
+          <br />
+          <p>
+            © lorem Ipsum 2023 <br />
+            All Rights Reserved.
+          </p>
+        </figure>
+      </div>
+      <div class="footer-col">
+        <h4>ADDRESS</h4>
+        <br />
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has
+        </p>
+        <br />
+        <br />
+        <h4>EMAIL</h4>
+        <br />
+        <a href="mailto:example@codehelp.com">example@codehelp.com</a>
+      </div>
+      <div class="footer-col menu">
+        <h4>MENU</h4>
+        <br />
+        <ul>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul class="social-icons">
+          <li>
+            <a href="#"> <img src="images/facebook.svg" alt="facebook" /> </a>
+          </li>
+          <li>
+            <a href="#"><img src="images/twitter.svg" alt="twitter" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/instagram.svg" alt="instagram" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

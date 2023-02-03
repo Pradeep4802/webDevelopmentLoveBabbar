@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Serif", serif;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* position: relative; */
+}
+
+.wrapper .top {
+  position: sticky;
+  top: 0;
+  display: flex;
+  z-index: -1;
+  /* flex-direction: row; */
+  background-color: white;
+}
+
+.wrapper .top .img {
+  position: relative;
+  top: 25px;
+  left: 100px;
+}
+
+.wrapper .top .img img {
+  width: 100px;
+}
+
+.wrapper .top .navbar {
+  position: relative;
+  top: 30px;
+  left: 340px;
+}
+
+.wrapper .top .navbar ul {
+  display: flex;
+  position: relative;
+  top: 20px;
+  gap: 110px;
+}
+
+.wrapper .top .navbar ul .navList {
+  list-style: none;
+  font-size: 24px;
+  color: purple;
+  cursor: pointer;
+  padding: 3px 20px;
+}
+
+.wrapper .top .navbar ul .navList:hover {
+  background: rgba(92, 32, 231, 0.603);
+  border-radius: 10px;
+  color: white;
+}
+
+.wrapper .top .btn {
+  position: absolute;
+  right: 100px;
+  top: 55px;
+}
+
+.wrapper .top .btn button {
+  background-color: rgba(92, 32, 231, 0.603);
+  border: 2px solid rgba(180, 238, 20, 0.603);
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  padding: 5px 24px;
+  cursor: pointer;
+}
+
+.wrapper .top .btn button:hover {
+  background-color: blueviolet;
+}
+
+.wrapper section {
+  position: relative;
+  top: 10%;
+  left: 6%;
+}
+
+.wrapper section .img1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrapper section .img1 .sec-1 h2 {
+  font-size: 70px;
+  color: rgb(45, 89, 190);
+}
+
+.wrapper section .img1 .sec-1 p {
+  position: relative;
+  top: 50px;
+  font-size: 30px;
+  color: grey;
+}
+
+.wrapper section .img1 img {
+  position: relative;
+  top: 25px;
+  right: 11%;
+  width: 610px;
+  border-radius: 10px;
+  box-shadow: rgb(218, 119, 119) 0px 54px 55px,
+    rgba(95, 184, 243, 0.979) 0px -12px 30px, rgb(156, 226, 91) 0px 4px 6px,
+    rgb(205, 230, 69) 0px 12px 13px, rgb(231, 55, 187) 0px -3px 5px;
+}
+
+.wrapper section .img2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrapper section .img2 .sec-2 {
+  position: relative;
+  top: 132px;
+  right: 240px;
+}
+
+.wrapper section .img2 .sec-2 h2 {
+  font-size: 70px;
+  color: rgb(45, 89, 190);
+}
+
+.wrapper section .img2 .sec-2 p {
+  position: relative;
+  top: 50px;
+  font-size: 30px;
+  color: grey;
+}
+
+.wrapper section .img2 img {
+  position: relative;
+  top: 150px;
+  right: 0%;
+  width: 610px;
+  height: 460px;
+  border-radius: 10px;
+  box-shadow: rgb(218, 119, 119) 0px 54px 55px,
+    rgba(95, 184, 243, 0.979) 0px -12px 30px, rgb(156, 226, 91) 0px 4px 6px,
+    rgb(205, 230, 69) 0px 12px 13px, rgb(231, 55, 187) 0px -3px 5px;
+}
