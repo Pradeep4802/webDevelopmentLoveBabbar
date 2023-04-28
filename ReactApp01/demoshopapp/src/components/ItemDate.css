@@ -1,0 +1,10 @@
+.mfg-date {
+    text-align: center;
+    background-color: aqua;
+}
+
+.Dialog-title, .Dialog-message {
+    text-align: center;
+    color: red;
+    background-color: yellow;
+}
