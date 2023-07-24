@@ -1,3 +1,112 @@
+// console.log('Babbar Here');
+
+// setTimeout(() => {
+//   console.log("third");
+// },3000);
+// function sync() {
+//     console.log('first');
+// }
+// sync();
+
+// console.log('second');
+
+// let meraPromise1 = new Promise(function(resolve ,reject) {
+//     setTimeout(() => {
+//         console.log('I am inside Promise1');
+
+//     }, 5000);
+//     // return 2;
+//     // resolve(2983);
+//     reject(new Error('Bhaisahab Error aaye Hai'));
+// });
+
+// meraPromise1.then((value) => { console.log(value) },(error) => { console.log("Received an error");})
+
+
+// let meraPromise2 = new Promise(function(resolve ,reject) {
+//     setTimeout(() => {
+//         console.log('I am inside Promise2');
+
+//     }, 3000);
+//     // resolve(2983);
+//     // reject(new Error('Bhaisahab Error aaye Hai'));
+// });
+
+// console.log('Pehla');
+
+// let wadaa1 = new Promise(function(resolve,reject) {
+//     setTimeout(() => {
+//         console.log('setimeout1 started');
+//     }, 2000);
+//     resolve(true);
+// });
+
+// let output = wadaa1.then(() => {
+//     let wadaa2 = new Promise(function(resolve, reject) {
+//         setTimeout(() => {
+//             console.log('setimeout2 started');
+//         },3000);
+//         resolve("wadaa 2 resolved");
+//     })
+//     return wadaa2;
+// })
+
+// output.then((value) => console.log(value))
+
+
+// async function abcd() {
+//     return "kya hua tera";
+// }
+
+
+// async function utility() {
+//     let delhiMausam = new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             resolve("Delhi me bahut garmi hai");
+//         },3000);
+//     });
+    
+//     let hydMausam = new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             resolve("Hyderabad is Cool");
+//         },5000);
+//     });
+
+//     let dm = await delhiMausam;
+//     let hm = await hydMausam;
+
+//     return [dm,hm];
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // setTimeout(function() {
@@ -11,7 +120,6 @@
 
 // console.log('second');
 
-
 // let meraPromise1 = new Promise(function(resolve, reject) {
 //         setTimeout(function() {
 //             console.log('I am insde Promise1');
@@ -22,7 +130,6 @@
 
 // meraPromise1.then((value) => { console.log(value)}, (error) => { console.log("Recieved an Error")});
 
-
 // let meraPromise2 = new Promise(function(resolve, reject) {
 //     setTimeout(function() {
 //         console.log('I am insde Promise2');
@@ -31,12 +138,11 @@
 //     //reject(new Error('Bhaisahab Error aaaye hai'))
 // });
 
-
 // console.log('Pehla');
 
-let temp =  {
-    val:123
-};
+// let temp =  {
+//     val:123
+// };
 
 // let waadaa1 = new Promise(function(resolve, reject) {
 //     setTimeout(()=> {
@@ -57,13 +163,11 @@ let temp =  {
 
 // output.then((value) => console.log(value));
 
-
 // async function abcd() {
 //     return "kya hua tera";
 // }
 
 // async function utility() {
-
 
 //     let delhiMausam = new Promise((resolve, reject) => {
 //         setTimeout(()=>{
@@ -85,12 +189,12 @@ let temp =  {
 // let obj = {
 //     heading:"head"
 // };
-async function utility() {
-    let content = await fetch('https://jsonplaceholder.typicode.com/posts/1');
-    let output = await content.json();
-    console.log(output);
-}
-utility();
+// async function utility() {
+//     let content = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+//     let output = await content.json();
+//     console.log(output);
+// }
+// utility();
 
 // async function helper() {
 
@@ -106,12 +210,11 @@ utility();
 //           'Content-type': 'application/json; charset=UTF-8',
 //         },
 //     };
-    
+
 //     let content = await fetch('https://jsonplaceholder.typicode.com/posts', options);
 //     let response = content.json();
 //     return response;
 // }
-
 
 // async function utility() {
 //     let ans = await helper();
@@ -120,15 +223,13 @@ utility();
 
 // utility();
 
-// function init() {
-//     let name = "Mozilla"; 
-//     function displayName() {
-//       // displayName() is the inner function, that forms the closure
-//       console.log(name); // use variable declared in the parent function
-//     }
-//     return displayName;
-// }
-// let a = init();
-// a();
-  
-
+function init() {
+    let name = "Mozilla";
+    function displayName() {
+      // displayName() is the inner function, that forms the closure
+      console.log(name); // use variable declared in the parent function
+    }
+    return displayName;
+}
+let a = init();
+a();
