@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Password Generator</h1>
         <div class="display-container">
-            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+            <input readonly placeholder="Password" class="display" data-passwordDisplay />
 
-            <button>
-                <span data-copyMsg>Copied</span>
+            <button class="copyBtn" data-copy> 
+                <span class="tooltip" data-copyMsg></span>
                 <img src="copy.svg" alt="copy" width="23" height="23">
             </button>
         </div>
@@ -32,19 +33,19 @@
 
             <!-- checkboxes -->
 
-            <div>
+            <div class="check">
                 <input type="checkbox" id="uppercase" >
                 <label for="uppercase">Includes Uppercase letters</label>
             </div>
-            <div>
+            <div class="check">
                 <input type="checkbox" id="lowercase" >
                 <label for="lowercase">Includes Lowercase letters</label>
             </div>
-            <div>
+            <div class="check">
                 <input type="checkbox" id="numbers" >
                 <label for="numbers">Includes Numbers</label>
             </div>
-            <div>
+            <div class="check">
                 <input type="checkbox" id="symbols" >
                 <label for="symbols">Includes Symbols</label>
             </div>
@@ -52,12 +53,15 @@
             <!-- strength section  -->
             <div class="strength-container">
                 <p>Strength</p>
-                <div data-indicator></div>
+                <div class="indicator" data-indicator></div>
             </div>
 
             <!-- Generator button -->
             <button class="generateButton">Generate Password</button>
         </div>
     </div>
+
+    <!-- script link -->
+    <script src="script.js"></script>
 </body>
 </html>
